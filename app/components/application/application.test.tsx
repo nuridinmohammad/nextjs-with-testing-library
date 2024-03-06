@@ -5,8 +5,7 @@ describe('Application', () => {
     test('Application component rendered', () => {
         render(<Application/>)
 
-        const placeholderUsername = screen.getByPlaceholderText('Username')
-        expect(placeholderUsername).toBeInTheDocument()
-        
+        const paragraphELement = screen.getByText("All fields are mandatory", {selector:"span"})
+        expect(paragraphELement).toBeInTheDocument()
     });
 });
