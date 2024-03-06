@@ -3,6 +3,16 @@ const nextJest = require("next/jest");
 const createJestConfig = nextJest({
   // Provide the path to your Next.js app to load next.config.js and .env files in your test environment
   dir: "./",
+  jest: {
+    coverageThreshold: {
+      global: {
+        branches: 80,
+        functions: 80,
+        lines: 80,
+        statements: -10,
+      },
+    },
+  },
 });
 
 // Add any custom config to be passed to Jest

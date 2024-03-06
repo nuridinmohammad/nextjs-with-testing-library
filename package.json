@@ -5,7 +5,8 @@
     "build": "next build",
     "start": "next start",
     "test": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "coverage": "yarn test --coverage --watchAll --collectCoverageFrom='app/components/**/*.{ts,tsx}' --collectCoverageFrom='!app/components/**/*.{test,spec,stories,types,constants}.{ts,tsx}'"
   },
   "dependencies": {
     "next": "latest",
