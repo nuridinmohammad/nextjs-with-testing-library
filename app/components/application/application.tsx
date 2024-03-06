@@ -20,11 +20,22 @@ export const Application = () => {
             />
           </div>
           <div>
+            <label htmlFor="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Username"
+              value="Vishwas"
+              onChange={() => {}}
+              role="textbox"
+            />
+          </div>
+          <div>
             <label  htmlFor="bio">Bio</label>
             <textarea id="bio" />
           </div>
           <div>
-            <label htmlFor="job-location">Name Country</label>
+            <label htmlFor="job-location">Select country</label>
             <select id="job-location">
               <option value="">Select a country</option>
               <option value="US">United States</option>
