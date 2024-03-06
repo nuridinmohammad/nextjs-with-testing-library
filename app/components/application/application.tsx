@@ -16,10 +16,11 @@ export const Application = () => {
               placeholder="Fullname"
               value="Vishwas"
               onChange={() => {}}
+              role="textbox"
             />
           </div>
           <div>
-            <label htmlFor="bio">Bio</label>
+            <label  htmlFor="bio">Bio</label>
             <textarea id="bio" />
           </div>
           <div>
