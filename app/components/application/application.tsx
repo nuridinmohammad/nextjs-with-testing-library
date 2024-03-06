@@ -7,7 +7,10 @@ export const Application = () => {
         <div>All fields are mandatory</div>
         <span>All fields are mandatory</span>
         <span title="close">X</span>
-        <img src="https://via.placeholder.com/150" alt="a person with a laptop" />
+        <img src="https://via.placeholder.com/150" alt="a person with a laptop image" />
+        <input alt="a person with a laptop input" />
+        <area alt="a person with a laptop area" />
+
         <div data-testid="custom-element">Custom HTML element</div>
         <form>
           <div>

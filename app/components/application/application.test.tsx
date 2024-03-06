@@ -5,7 +5,15 @@ describe('Application', () => {
     test('Application component rendered', () => {
         render(<Application/>)
 
-        const usernameValue = screen.getByDisplayValue("Nuridin")
-        expect(usernameValue).toBeInTheDocument()
+        const alternativeAttrImg = screen.getByAltText("a person with a laptop image")
+        expect(alternativeAttrImg).toBeInTheDocument()
+
+        const alternativeAttrInput = screen.getByAltText("a person with a laptop input")
+        expect(alternativeAttrInput).toBeInTheDocument()
+
+        const alternativeAttrArea = screen.getByAltText("a person with a laptop area")
+        expect(alternativeAttrArea).toBeInTheDocument()
+
+
     });
 });
