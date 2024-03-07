@@ -5,15 +5,11 @@ describe('Application', () => {
     test('Application component rendered', () => {
         render(<Application/>)
 
-        const alternativeAttrImg = screen.getByAltText("a person with a laptop image")
-        expect(alternativeAttrImg).toBeInTheDocument()
+       const titleAttr = screen.getByTitle("Close", {})
+       expect(titleAttr).toBeInTheDocument()
 
-        const alternativeAttrInput = screen.getByAltText("a person with a laptop input")
-        expect(alternativeAttrInput).toBeInTheDocument()
-
-        const alternativeAttrArea = screen.getByAltText("a person with a laptop area")
-        expect(alternativeAttrArea).toBeInTheDocument()
-
+       const title = screen.getByText("x", {selector:"title"})
+       expect(title).toBeInTheDocument()
 
     });
 });

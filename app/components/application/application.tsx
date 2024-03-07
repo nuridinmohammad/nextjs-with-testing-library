@@ -6,7 +6,8 @@ export const Application = () => {
         <p>All fields are mandatory</p>
         <div>All fields are mandatory</div>
         <span>All fields are mandatory</span>
-        <span title="close">X</span>
+        <span title="Close">X</span>
+        <title title="close">x</title>
         <img src="https://via.placeholder.com/150" alt="a person with a laptop image" />
         <input alt="a person with a laptop input" />
         <area alt="a person with a laptop area" />
