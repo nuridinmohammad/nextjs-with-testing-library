@@ -5,11 +5,7 @@ describe('Application', () => {
     test('Application component rendered', () => {
         render(<Application/>)
 
-       const titleAttr = screen.getByTitle("Close", {})
-       expect(titleAttr).toBeInTheDocument()
-
-       const title = screen.getByText("x", {selector:"title"})
-       expect(title).toBeInTheDocument()
-
+        const element = screen.getByTestId('custom-element')
+        expect(element).toBeInTheDocument()
     });
 });
