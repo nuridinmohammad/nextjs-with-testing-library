@@ -1,27 +1,16 @@
-"use client"
+import { CounterTwoProps } from './counter.types'
 
-import { useState } from "react";
-
-export const Counter = () => {
-  const [count, setCount] = useState(0);
-  const [amount, setAmount] = useState(0);
+export const CounterTwo = (props: CounterTwoProps) => {
   return (
     <div>
-      <h1>{count}</h1>
-      <h2>{amount}</h2>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-
-      {/* <label htmlFor="amount">Amount</label> */}
-      <input
-        data-testid="amount"
-        id="amount"
-        type="number"
-        name="amount"
-        value={amount}
-        onChange={(e) => setAmount(parseInt(e.target.value))}
-      />
-      <button onClick={() => setCount(count + 1)}>Increments</button>
-      <button onClick={() => setCount(amount)}>Set</button>
+      <h1>Counter Two</h1>
+      <p>{props.count}</p>
+      {props.handleIncrement && (
+        <button onClick={props.handleIncrement}>Increment</button>
+      )}
+      {props.handleDecrement && (
+        <button onClick={props.handleDecrement}>Decrement</button>
+      )}
     </div>
-  );
-};
+  )
+}
